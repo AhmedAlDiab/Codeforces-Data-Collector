@@ -115,7 +115,8 @@ const getAc = async(url) => {
         return {
             'status': 'FAILED',
             'result': 'There is something wrong :(',
-            'err' : err.message
+            'err': err.message,
+            'stack': err.stack
         }
     }
 }
